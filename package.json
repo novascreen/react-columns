@@ -16,7 +16,7 @@
     "start": "nwb serve",
     "test": "nwb test",
     "test:watch": "nwb test --server",
-    "gh-pages": "node -e \"require('gulp').src('demo/dist/**/*').pipe(require('gulp-gh-pages')())\""
+    "deploy": "gh-pages -d demo/dist"
   },
   "dependencies": {
     "lodash.min": "^4.0.0",
@@ -26,8 +26,7 @@
     "react": "0.14.x"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-gh-pages": "^0.5.4",
+    "gh-pages": "^0.11.0",
     "lodash.random": "^3.1.4",
     "lodash.range": "^3.1.4",
     "nwb": "0.9.x",
