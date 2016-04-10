@@ -4,7 +4,7 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe react-columns here.
+React component for rendering columns from a list of children with horizontal ordering
 
 [build-badge]: https://img.shields.io/travis/novascreen/react-columns/master.svg?style=flat-square
 [build]: https://travis-ci.org/novascreen/react-columns
