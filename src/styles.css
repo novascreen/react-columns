@@ -1,5 +1,0 @@
-.columnsColumn {
-  overflow: hidden; /* fix for Firefox */
-  break-inside: avoid-column;
-  -webkit-column-break-inside: avoid;
-}

@@ -1,7 +1,14 @@
 import React, { Component } from 'react'
 import { mediaQueryMapper } from './mq'
 import mapNodesToColumns from './mapNodesToColumns'
-import styles from './styles.css'
+
+const styles = {
+  column: {
+    overflow: 'hidden', /* fix for Firefox */
+    breakInside: 'avoid-column',
+    WebkitColumnBreakInside: 'avoid',
+  }
+}
 
 class Columns extends Component{
   constructor(props) {
@@ -38,8 +45,6 @@ class Columns extends Component{
     const { className, children, dimensions, gap = 0 } = this.props
     const { columns = this.props.columns } = this.state
 
-    console.log('render', this.props.columns, columns, this.state.columns)
-
     if (columns === 1) {
       return <div className={className}>{children}</div>
     }
@@ -48,7 +53,7 @@ class Columns extends Component{
       return (
         <div className={className} style={{ columnCount: columns, columnGap: gap }}>
           {columnsContainers.map((column, i) => (
-            <div key={i} className={styles.columnsColumn}>{column}</div>
+            <div key={i} style={styles.column}>{column}</div>
           ))}
         </div>
       )
