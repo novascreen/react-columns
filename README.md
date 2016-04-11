@@ -31,16 +31,16 @@ var Columns = require('react-columns');
 function Component(){
   return (
   <Columns columns="5">
-    <img src="http://placehold.it/800x1200?text=1" alt="">
-    <img src="http://placehold.it/800x600?text=2" alt="">
-    <img src="http://placehold.it/800x800?text=3" alt="">
-    <img src="http://placehold.it/800x600?text=4" alt="">
-    <img src="http://placehold.it/800x1200?text=5" alt="">
-    <img src="http://placehold.it/800x600?text=6" alt="">
-    <img src="http://placehold.it/800x400?text=7" alt="">
-    <img src="http://placehold.it/800x400?text=8" alt="">
-    <img src="http://placehold.it/800x400?text=9" alt="">
-    <img src="http://placehold.it/800x800?text=10" alt="">
+    <img src="http://placehold.it/800x1200?text=1" alt="" />
+    <img src="http://placehold.it/800x600?text=2" alt="" />
+    <img src="http://placehold.it/800x800?text=3" alt="" />
+    <img src="http://placehold.it/800x600?text=4" alt="" />
+    <img src="http://placehold.it/800x1200?text=5" alt="" />
+    <img src="http://placehold.it/800x600?text=6" alt="" />
+    <img src="http://placehold.it/800x400?text=7" alt="" />
+    <img src="http://placehold.it/800x400?text=8" alt="" />
+    <img src="http://placehold.it/800x400?text=9" alt="" />
+    <img src="http://placehold.it/800x800?text=10" alt="" />
   </Columns>
   );
 }
@@ -60,16 +60,16 @@ function Component(){
   }];
   return (
   <Columns queries={queries}>
-    <img src="http://placehold.it/800x1200?text=1" alt="">
-    <img src="http://placehold.it/800x600?text=2" alt="">
-    <img src="http://placehold.it/800x800?text=3" alt="">
-    <img src="http://placehold.it/800x600?text=4" alt="">
-    <img src="http://placehold.it/800x1200?text=5" alt="">
-    <img src="http://placehold.it/800x600?text=6" alt="">
-    <img src="http://placehold.it/800x400?text=7" alt="">
-    <img src="http://placehold.it/800x400?text=8" alt="">
-    <img src="http://placehold.it/800x400?text=9" alt="">
-    <img src="http://placehold.it/800x800?text=10" alt="">
+    <img src="http://placehold.it/800x1200?text=1" alt="" />
+    <img src="http://placehold.it/800x600?text=2" alt="" />
+    <img src="http://placehold.it/800x800?text=3" alt="" />
+    <img src="http://placehold.it/800x600?text=4" alt="" />
+    <img src="http://placehold.it/800x1200?text=5" alt="" />
+    <img src="http://placehold.it/800x600?text=6" alt="" />
+    <img src="http://placehold.it/800x400?text=7" alt="" />
+    <img src="http://placehold.it/800x400?text=8" alt="" />
+    <img src="http://placehold.it/800x400?text=9" alt="" />
+    <img src="http://placehold.it/800x800?text=10" alt="" />
   </Columns>
   );
 }
@@ -94,16 +94,16 @@ function Component(){
   ];
   return (
   <Columns dimensions={dimensions}>
-    <img src="http://placehold.it/800x1200?text=1" alt="">
-    <img src="http://placehold.it/800x600?text=2" alt="">
-    <img src="http://placehold.it/800x800?text=3" alt="">
-    <img src="http://placehold.it/800x600?text=4" alt="">
-    <img src="http://placehold.it/800x1200?text=5" alt="">
-    <img src="http://placehold.it/800x600?text=6" alt="">
-    <img src="http://placehold.it/800x400?text=7" alt="">
-    <img src="http://placehold.it/800x400?text=8" alt="">
-    <img src="http://placehold.it/800x400?text=9" alt="">
-    <img src="http://placehold.it/800x800?text=10" alt="">
+    <img src="http://placehold.it/800x1200?text=1" alt="" />
+    <img src="http://placehold.it/800x600?text=2" alt="" />
+    <img src="http://placehold.it/800x800?text=3" alt="" />
+    <img src="http://placehold.it/800x600?text=4" alt="" />
+    <img src="http://placehold.it/800x1200?text=5" alt="" />
+    <img src="http://placehold.it/800x600?text=6" alt="" />
+    <img src="http://placehold.it/800x400?text=7" alt="" />
+    <img src="http://placehold.it/800x400?text=8" alt="" />
+    <img src="http://placehold.it/800x400?text=9" alt="" />
+    <img src="http://placehold.it/800x800?text=10" alt="" />
   </Columns>
   );
 }
