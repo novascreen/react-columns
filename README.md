@@ -25,9 +25,9 @@ See this [compenent in action][demo]
 
 ## Features
 
-* Using CSS3 Columns
+* Using [CSS3 Multiple column layout][multicolumn]
 * Static number of columns
-* Dynamic number of columns based on media queries (matchMedia)
+* Dynamic number of columns based on media queries ([matchMedia][[matchmedia]])
 * Height aware ordering of items
 * Put gap between columns
 
@@ -161,4 +161,6 @@ function Component(){
 
 MIT
 
+[multicolumn]: http://caniuse.com/#feat=multicolumn
+[matchmedia]: http://caniuse.com/#feat=matchmedia
 [demo]: http://novascreen.github.io/react-columns/
