@@ -3,8 +3,15 @@
 }
 
 .demoItem {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.demoItem img {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: block;
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
 }
