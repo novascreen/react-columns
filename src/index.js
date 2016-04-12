@@ -4,9 +4,9 @@ import mapNodesToColumns from './mapNodesToColumns'
 
 const styles = {
   column: {
-    overflow: 'hidden', /* fix for Firefox */
     breakInside: 'avoid-column',
     WebkitColumnBreakInside: 'avoid',
+    WebkitMarginTopCollapse: 'discard',
   }
 }
 
@@ -41,23 +41,33 @@ class Columns extends Component{
     }
   }
 
-  render() {
-    const { className, children, dimensions, gap = 0 } = this.props
-    const { columns = this.props.columns } = this.state
+  renderColumns(columns) {
+    const { children, dimensions } = this.props
 
     if (columns === 1) {
-      return <div className={className}>{children}</div>
+      return children
     }
     else {
       const columnsContainers = mapNodesToColumns({ children, columns, dimensions })
-      return (
-        <div className={className} style={{ columnCount: columns, columnGap: gap }}>
-          {columnsContainers.map((column, i) => (
-            <div key={i} style={styles.column}>{column}</div>
-          ))}
-        </div>
-      )
+      return columnsContainers.map((column, i) => (
+        <div key={i} style={styles.column}>{column}</div>
+      ))
     }
+  }
+
+  render() {
+    const { className, gap = 0 } = this.props
+    const { columns = this.props.columns } = this.state
+    const rootStyles = columns === 1 ? {} : { 
+      columnCount: columns,
+      WebkitColumnCount: columns,
+      MozColumnCount: columns,
+      columnGap: gap,
+      WebkitColumnGap: gap,
+      MozColumnGap: gap,
+    }
+
+    return <div className={className} style={rootStyles}>{this.renderColumns(columns)}</div>
   }
 }
 
