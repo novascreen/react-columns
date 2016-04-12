@@ -9,6 +9,13 @@ Tags:
 - [Internal]
 - [Polish]
 
+## v0.1.2 (April 11, 2016)
+
+- **Bug fix**
+  - cross browser compatibility
+- **Documentation**
+  - refactored and improved demo
+
 ## v0.1.1 (April 11, 2016)
 
 - **Bug fix**
