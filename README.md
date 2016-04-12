@@ -17,8 +17,20 @@ React component for rendering columns from a list of children with horizontal or
 
 ## Demo
 
-<http://novascreen.github.io/react-columns/>
+See this [compenent in action][demo]
  
+## Installation
+
+`npm install --save react-columns`
+
+## Features
+
+* Using CSS3 Columns
+* Static number of columns
+* Dynamic number of columns based on media queries (matchMedia)
+* Height aware ordering of items
+* Put gap between columns
+
 ## Usage
 
 Simply pass a list of nodes to the `<Columns>` component and either set a fixed number of columns or pass in a set of media queries for it to respond to.
@@ -144,3 +156,9 @@ function Component(){
 * `gap`  `{String}` (default: `0`)
 
   Gap between columns as number or string with unit.
+
+## License
+
+MIT
+
+[demo]: http://novascreen.github.io/react-columns/
