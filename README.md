@@ -14,10 +14,6 @@ React component for rendering columns from a list of children with horizontal or
 
 [coveralls-badge]: https://img.shields.io/coveralls/novascreen/react-columns/master.svg?style=flat-square
 [coveralls]: https://coveralls.io/github/novascreen/react-columns
-
-## Demo
-
-See this [compenent in action][demo]
  
 ## Installation
 
@@ -30,6 +26,12 @@ See this [compenent in action][demo]
 * Dynamic number of columns based on media queries ([matchMedia][[matchmedia]])
 * Height aware ordering of items
 * Put gap between columns
+
+## Demo
+
+See this [compenent in action][demo]
+
+![](https://i.gyazo.com/9a59c888c472388d8de14dbc4391db7e.gif)
 
 ## Usage
 
