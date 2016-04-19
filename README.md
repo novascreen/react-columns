@@ -29,7 +29,7 @@ React component for rendering columns from a list of children with horizontal or
 
 ## Demo
 
-See this [compenent in action][demo]
+See this [component in action][demo]
 
 ![](https://i.gyazo.com/9a59c888c472388d8de14dbc4391db7e.gif)
 
