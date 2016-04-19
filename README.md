@@ -23,7 +23,7 @@ React component for rendering columns from a list of children with horizontal or
 
 * Using [CSS3 Multiple column layout][multicolumn]
 * Static number of columns
-* Dynamic number of columns based on media queries ([matchMedia][[matchmedia]])
+* Dynamic number of columns based on media queries ([matchMedia][matchmedia])
 * Height aware ordering of items
 * Put gap between columns
 
