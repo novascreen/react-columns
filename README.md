@@ -158,6 +158,12 @@ function Component(){
 * `gap`  `{String}` (default: `0`)
 
   Gap between columns as number or string with unit.
+  
+## Known issues
+
+In Chrome < 51 you can't use `overflow: hidden` inside of the columns. This is related to this issue:
+https://bugs.chromium.org/p/chromium/issues/detail?id=527709
+This shouldn't be a problem much longer though.
 
 ## License
 
