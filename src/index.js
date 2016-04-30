@@ -2,14 +2,6 @@ import React, { Component } from 'react'
 import { mediaQueryMapper } from './mq'
 import mapNodesToColumns from './mapNodesToColumns'
 
-const styles = {
-  column: {
-    breakInside: 'avoid-column',
-    WebkitColumnBreakInside: 'avoid',
-    WebkitMarginTopCollapse: 'discard',
-  }
-}
-
 class Columns extends Component{
   constructor(props) {
     super(props)
@@ -42,38 +34,53 @@ class Columns extends Component{
   }
 
   renderColumns(columns) {
-    const { children, dimensions } = this.props
-
-    if (columns === 1) {
-      return children
+    const { children, dimensions, gap } = this.props
+    const columnStyles = {
+      boxSizing: 'border-box',
+      float: 'left',
+      width: 'calc(1 / ' + columns + ' * 100%)',
+      paddingLeft: gap,
+      paddingRight: gap,
     }
-    else {
+    let renderedColumns = children
+
+    if (columns > 1) {
       const columnsContainers = mapNodesToColumns({ children, columns, dimensions })
-      return columnsContainers.map((column, i) => (
-        <div key={i} style={styles.column}>{column}</div>
+      renderedColumns = columnsContainers.map((column, i) => (
+        <div key={i} style={columnStyles}>{column}</div>
       ))
     }
+
+    return renderedColumns
   }
 
   render() {
-    const { className, gap = 0 } = this.props
+    const { className, gap, rootStyles } = this.props
     const { columns = this.props.columns } = this.state
-    const rootStyles = columns === 1 ? {} : { 
-      columnCount: columns,
-      WebkitColumnCount: columns,
-      MozColumnCount: columns,
-      columnGap: gap,
-      WebkitColumnGap: gap,
-      MozColumnGap: gap,
+    const rowStyles = columns === 1 ? {} : {
+      marginLeft: `calc(${gap} * -1)`,
+      marginRight: `calc(${gap} * -1)`,
     }
 
-    return <div className={className} style={rootStyles}>{this.renderColumns(columns)}</div>
+    return (
+      <div className={className} style={rootStyles}>
+        <div style={rowStyles}>
+          {this.renderColumns(columns)}
+          <div style={{clear: 'both'}}></div>
+        </div>
+      </div>
+    )
   }
 }
 
 Columns.defaultProps = {
+  className: '',
+  rootStyles: {
+    overflowX: 'hidden',
+  },
   queries: [],
-  columns: 3
+  columns: 3,
+  gap: 0,
 }
 
 export default Columns

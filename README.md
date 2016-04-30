@@ -21,7 +21,6 @@ React component for rendering columns from a list of children with horizontal or
 
 ## Features
 
-* Using [CSS3 Multiple column layout][multicolumn]
 * Static number of columns
 * Dynamic number of columns based on media queries ([matchMedia][matchmedia])
 * Height aware ordering of items
@@ -125,6 +124,14 @@ function Component(){
 
 ## Properties
 
+* `className`  `{String}` (default: `''`)
+
+  Lets you pass in a class for the most outer element of the component.
+
+* `rootStyles`  `{Object}` (default: `{ overflowX: 'hidden' }`)
+
+  Styles applied to the most outer element. This avoids horizontal scrolling when using `gap` since the negative margin technique is used to create the gaps. You might want to remove this and handle it at a node higher up in the DOM tree.
+
 * `columns` `{Number}` (default: `3`)
 
   Sets the amount of columns statically.
@@ -158,17 +165,10 @@ function Component(){
 * `gap`  `{String}` (default: `0`)
 
   Gap between columns as number or string with unit.
-  
-## Known issues
-
-In Chrome < 51 you can't use `overflow: hidden` inside of the columns. This is related to this issue:
-https://bugs.chromium.org/p/chromium/issues/detail?id=527709
-This shouldn't be a problem much longer though.
 
 ## License
 
 MIT
 
-[multicolumn]: http://caniuse.com/#feat=multicolumn
 [matchmedia]: http://caniuse.com/#feat=matchmedia
 [demo]: http://novascreen.github.io/react-columns/
