@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { mediaQueryMapper } from './mq'
 import mapNodesToColumns from './mapNodesToColumns'
 
@@ -81,6 +81,14 @@ Columns.defaultProps = {
   queries: [],
   columns: 3,
   gap: 0,
+}
+
+Columns.propTypes = {
+  className: PropTypes.string,
+  rootStyles: PropTypes.object,
+  queries: PropTypes.array,
+  columns: PropTypes.number,
+  gap: PropTypes.string,
 }
 
 export default Columns
