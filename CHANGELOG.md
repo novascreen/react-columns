@@ -9,6 +9,10 @@ Tags:
 - [Internal]
 - [Polish]
 
+## v0.2.1 (April 30, 2016)
+- **Internal**
+  - Fixed some propTypes related warnings
+
 ## v0.2.0 (April 30, 2016)
 
 - **Internal**
