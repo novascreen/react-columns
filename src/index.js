@@ -80,7 +80,7 @@ Columns.defaultProps = {
   },
   queries: [],
   columns: 3,
-  gap: 0,
+  gap: '0px',
 }
 
 Columns.propTypes = {

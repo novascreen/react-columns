@@ -32,7 +32,7 @@ describe('Columns', () => {
 
   it('renders into n columns when setting just `columns` property', () => {
     render((
-      <Columns columns="2">
+      <Columns columns={2}>
         <div id="1">1</div>
         <div id="2">2</div>
         <div id="3">3</div>

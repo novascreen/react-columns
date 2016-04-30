@@ -162,7 +162,7 @@ function Component(){
 
     The height of the node
 
-* `gap`  `{String}` (default: `0`)
+* `gap`  `{String}` (default: `0px`)
 
   Gap between columns as number or string with unit.
 
