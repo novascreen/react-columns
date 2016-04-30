@@ -1,5 +1,4 @@
 import min from 'lodash.min'
-import times from 'lodash.times'
 
 export default function mapNodesToColumns({
   children = [],
@@ -15,10 +14,10 @@ export default function mapNodesToColumns({
 
   // use dimensions to calculate the best column for each child
   if (dimensions.length && dimensions.length === children.length) {
-    times(columns, (i) => {
+    for(let i=0; i<columns; i++) {
       nodes[i] = []
       heights[i] = 0
-    })
+    }
     children.forEach((child, i) => {
       let { width, height } = dimensions[i]
       let index = heights.indexOf(min(heights))
@@ -28,9 +27,9 @@ export default function mapNodesToColumns({
   }
   // equally spread the children across the columns
   else {
-    times(columns, (i) => {
+    for(let i=0; i<columns; i++) {
       nodes[i] = children.filter((child, j) => j % columns === i)
-    })
+    }
   }
 
   return nodes

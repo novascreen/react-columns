@@ -19,8 +19,7 @@
     "deploy": "gh-pages -d demo/dist"
   },
   "dependencies": {
-    "lodash.min": "^4.0.0",
-    "lodash.times": "^4.1.0"
+    "lodash.min": "^4.0.0"
   },
   "peerDependencies": {
     "react": "0.14.x"
