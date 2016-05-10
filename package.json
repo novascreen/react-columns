@@ -36,7 +36,7 @@
   "author": "Thomas Hermann",
   "homepage": "http://novascreen.github.io/react-columns/",
   "license": "MIT",
-  "repository": "",
+  "repository": "novascreen/react-columns",
   "keywords": [
     "react-component",
     "columns",
