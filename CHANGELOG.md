@@ -9,6 +9,10 @@ Tags:
 - [Internal]
 - [Polish]
 
+## v0.2.2 (May 30, 2016)
+- **Bug Fix**
+  - fixed column percentage for IE
+
 ## v0.2.1 (April 30, 2016)
 - **Internal**
   - Fixed some propTypes related warnings
