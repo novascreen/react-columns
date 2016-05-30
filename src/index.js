@@ -38,7 +38,7 @@ class Columns extends Component{
     const columnStyles = {
       boxSizing: 'border-box',
       float: 'left',
-      width: 'calc(1 / ' + columns + ' * 100%)',
+      width: `${1 / columns * 100}%`,
       paddingLeft: gap,
       paddingRight: gap,
     }
