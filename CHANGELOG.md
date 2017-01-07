@@ -9,6 +9,12 @@ Tags:
 - [Internal]
 - [Polish]
 
+## v1.0.0 (January 07, 2017)
+- **New Feature**
+  - [#7](https://github.com/novascreen/react-columns/pull/7) Enable server side rendering (thanks to [@olapersson](https://github.com/olapersson))
+- **Internal**
+  - Update dependencies
+
 ## v0.2.2 (May 30, 2016)
 - **Bug Fix**
   - fixed column percentage for IE
