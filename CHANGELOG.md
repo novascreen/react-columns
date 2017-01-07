@@ -9,6 +9,11 @@ Tags:
 - [Internal]
 - [Polish]
 
+## v1.0.1 (January 07, 2017)
+- **Bug Fix**
+  - Fix Travis build
+  - Re-add missing gh-pages module
+
 ## v1.0.0 (January 07, 2017)
 - **New Feature**
   - [#7](https://github.com/novascreen/react-columns/pull/7) Enable server side rendering (thanks to [@olapersson](https://github.com/olapersson))
