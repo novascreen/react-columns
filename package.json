@@ -6,31 +6,31 @@
   "jsnext:main": "es6/index.js",
   "files": [
     "css",
-    "es6",
+    "es",
     "lib",
     "umd"
   ],
   "scripts": {
-    "build": "nwb build",
-    "clean": "nwb clean",
-    "start": "nwb serve",
-    "test": "nwb test",
-    "test:watch": "nwb test --server",
+    "build": "nwb build-react-component",
+    "clean": "nwb clean-module && npm clean-demo",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server",
     "deploy": "gh-pages -d demo/dist"
   },
   "dependencies": {
-    "lodash.min": "^4.0.0"
+    "lodash.min": "^4.0.1"
   },
   "peerDependencies": {
-    "react": "0.14.x"
+    "react": "15.x"
   },
   "devDependencies": {
-    "gh-pages": "^0.11.0",
-    "lodash.random": "^3.1.4",
-    "lodash.range": "^3.1.4",
-    "nwb": "0.9.x",
-    "react": "0.14.x",
-    "react-dom": "0.14.x",
+    "lodash.random": "^3.2.0",
+    "lodash.range": "^3.2.0",
+    "nwb": "0.13.x",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "react-lorem-image": "^1.3.0"
   },
   "author": "Thomas Hermann",

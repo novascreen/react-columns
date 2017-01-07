@@ -2,7 +2,7 @@ import expect from 'expect'
 import React from 'react'
 import {render, unmountComponentAtNode} from 'react-dom'
 
-import mq from 'src/mq'
+import * as mq from 'src/mq'
 
 describe('mq/mediaQuery()', () => {
   describe('set query with different values', () => {

@@ -1,12 +1,13 @@
 module.exports = {
   type: 'react-component',
-  build: {
-    externals: {
-      'react': 'React'
-    },
-    global: 'ReactColumns',
-    jsNext: true,
-    umd: true
+  npm: {
+    esModules: true,
+    umd: {
+      global: 'ReactColumns',
+      externals: {
+        react: 'React'
+      }
+    }
   },
   webpack: {
     loaders: {

@@ -1,6 +1,6 @@
 var mediaQueries = {};
 
-function mediaQuery({
+export function mediaQuery({
   query = '',
   full = false,
   onChange = () => {},
@@ -38,7 +38,7 @@ function mediaQuery({
 }
 
 
-function mediaQueryMapper({ 
+export function mediaQueryMapper({ 
   queries = [],
   valueKey = 'value',
   defaultValue = '',
@@ -72,5 +72,3 @@ function mediaQueryMapper({
 
     return { getValue, removeListeners }
 }
-
-export default { mediaQuery, mediaQueryMapper }
