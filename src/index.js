@@ -15,7 +15,7 @@ class Columns extends Component{
     })
   }
 
-  componentWillMount() {
+  componentDidMount() {
     if (this.props.queries.length) {
       this._columns = mediaQueryMapper({
         queries: this.props.queries,
