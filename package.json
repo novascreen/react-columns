@@ -19,9 +19,6 @@
     "test:watch": "nwb test-react --server",
     "deploy": "gh-pages -d demo/dist"
   },
-  "dependencies": {
-    "lodash.min": "^4.0.1"
-  },
   "peerDependencies": {
     "react": "15.x"
   },

@@ -1,5 +1,3 @@
-import min from 'lodash.min'
-
 export default function mapNodesToColumns({
   children = [],
   columns = 1,
@@ -20,7 +18,7 @@ export default function mapNodesToColumns({
     }
     children.forEach((child, i) => {
       let { width, height } = dimensions[i]
-      let index = heights.indexOf(min(heights))
+      let index = heights.indexOf(Math.min(...heights))
       nodes[index].push(child)
       heights[index] += height / width
     })
