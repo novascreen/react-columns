@@ -9,6 +9,11 @@ Tags:
 - [Internal]
 - [Polish]
 
+## v1.0.2 (February 08, 2017)
+- **Internal**
+  - Remove lodash.min (the only dependency)
+  - Get rid of nwb deprecation warnings
+
 ## v1.0.1 (January 07, 2017)
 - **Bug Fix**
   - Fix Travis build
