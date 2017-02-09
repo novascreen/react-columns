@@ -10,9 +10,9 @@ module.exports = {
     }
   },
   webpack: {
-    loaders: {
+    rules: {
       css: {
-        query: {
+        options: {
           modules: true
         }
       }
