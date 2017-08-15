@@ -158,7 +158,7 @@ function Component(){
 
     The width of node
 
-  * `dimensions[].width` `{Number}`
+  * `dimensions[].height` `{Number}`
 
     The height of the node
 
