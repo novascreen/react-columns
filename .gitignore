@@ -1,6 +1,6 @@
 /coverage
 /demo/dist
-/es
+/es6
 /lib
 /node_modules
 /umd
