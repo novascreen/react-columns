@@ -10,25 +10,42 @@ class Columns extends Component{
     this.state = {}
   }
 
-  setColumns() {
-    this.setState({
-      columns: this._columns.getValue()
-    })
+  componentDidMount() {
+    this.updateColumns(this.props);
   }
 
-  componentDidMount() {
-    if (this.props.queries.length) {
+  componentWillReceiveProps(nextProps) {
+    const queriesChanged = this.props.queries !== nextProps.queries;
+    const columnsChanged = this.props.columns !== nextProps.columns
+    if (queriesChanged || columnsChanged) {
+      this.updateColumns(nextProps);
+    }
+  }
+
+  componentWillUnmount() {
+    this.removeColumnListeners()
+  }
+
+  updateColumns(props) {
+    if (props.queries.length) {
+      this.removeColumnListeners()
       this._columns = mediaQueryMapper({
-        queries: this.props.queries,
+        queries: props.queries,
         valueKey: 'columns',
-        defaultValue: this.props.queries.length ? 1 : this.props.columns,
+        defaultValue: props.queries.length ? 1 : props.columns,
         onChange: this.setColumns,
       })
       this.setColumns()
     }
   }
-
-  componentWillUnmount() {
+  
+  setColumns() {
+    this.setState(() => ({
+      columns: this._columns.getValue()
+    }))
+  }
+  
+  removeColumnListeners() {
     if (this._columns) {
       this._columns.removeListeners()
     }
