@@ -9,6 +9,14 @@ Tags:
 - [Internal]
 - [Polish]
 
+## v1.1.0 (September 09, 2017)
+- **Bug Fix**
+  - Update columns when `queries` prop changes
+  - Update reference to `es` build folder in `package.json` from `jsnext` to `module`
+- **Internal**
+  - Upgraded to `prop-types`
+  - Updated dependencies via Greenkeeper
+
 ## v1.0.2 (February 08, 2017)
 - **Internal**
   - Remove lodash.min (the only dependency)
