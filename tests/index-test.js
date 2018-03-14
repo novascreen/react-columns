@@ -58,9 +58,9 @@ describe('Columns', () => {
         <div id="5">5</div>
         <div id="6">6</div>
       </Columns>
-    ), node, () => {
-      expect(node.textContent).toContain('123456')
-    })
+    ), node)
+
+    expect(node.textContent).toContain('123456')
   })
 
   it('renders into 2 columns with a small first media query', () => {
@@ -76,9 +76,9 @@ describe('Columns', () => {
         <div id="5">5</div>
         <div id="6">6</div>
       </Columns>
-    ), node, () => {
-      expect(node.textContent).toContain('135246')
-    })
+    ), node)
+
+    expect(node.textContent).toContain('135246')
   })
 
   it('renders into 1 column after changing first media query from small to big', () => {
@@ -115,8 +115,8 @@ describe('Columns', () => {
     }
     render((
       <UpdateQueries />
-    ), node, () => {
-      expect(node.textContent).toContain('123456')
-    })
+    ), node)
+
+    expect(node.textContent).toContain('123456')
   })
 })
