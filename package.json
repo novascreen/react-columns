@@ -1,6 +1,6 @@
 {
   "name": "react-columns",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React component for rendering columns from a list of children with horizontal ordering",
   "main": "lib/index.js",
   "module": "es/index.js",
