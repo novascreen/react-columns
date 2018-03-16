@@ -12,7 +12,7 @@ Tags:
 ## v1.1.1 (March 16, 2018)
 - **Internal**
   - Upgrade to React 16.2.0 [#23](https://github.com/novascreen/react-columns/pull/23) (thanks to [@IreneIrene](https://github.com/IreneIrene))
-  - Update nwb to the latest version [#22](https://github.com/novascreen/react-columns/pull/22)
+  - Update nwb to the latest version
 
 ## v1.1.0 (September 09, 2017)
 - **Bug Fix**
