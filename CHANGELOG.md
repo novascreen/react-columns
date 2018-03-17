@@ -9,7 +9,7 @@ Tags:
 - [Internal]
 - [Polish]
 
-## v1.1.1 (March 16, 2018)
+## v1.2.0 (March 17, 2018)
 - **Internal**
   - Upgrade to React 16.2.0 [#23](https://github.com/novascreen/react-columns/pull/23) (thanks to [@IreneIrene](https://github.com/IreneIrene))
   - Update nwb to the latest version
