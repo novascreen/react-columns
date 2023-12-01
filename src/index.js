@@ -14,7 +14,7 @@ class Columns extends Component{
     this.updateColumns(this.props);
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const queriesChanged = this.props.queries !== nextProps.queries;
     const columnsChanged = this.props.columns !== nextProps.columns
     if (queriesChanged || columnsChanged) {
